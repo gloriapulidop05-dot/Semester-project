@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gastronomy & Shopping - Huelva Tourism</title>
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR WITH LOGO -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+          <img src="./img/logo.png" alt="Huelva Tourism Logo" width="36" height="36" class="me-2 rounded">
+          HUELVA TOURISM
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interes.html"><i class="bi bi-bank me-1"></i>What to See</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./gastronomia.html"><i class="bi bi-cup-hot me-1"></i>Food & Shopping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actividades.html"><i class="bi bi-sun me-1"></i>Leisure & History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./guia.html"><i class="bi bi-table me-1"></i>Directory (50)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html"><i class="bi bi-envelope-paper me-1"></i>Plan Your Trip</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BREADCRUMB -->
+    <div class="container mt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 rounded">
+          <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Gastronomy & Shopping</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- HEADER HIGHLIGHTING SPANISH CAPITAL OF GASTRONOMY -->
+    <section class="container my-4">
+      <div class="p-4 p-md-5 mb-4 rounded-3 bg-light border shadow-sm">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge bg-warning text-dark fs-6 mb-2">
+              <i class="bi bi-award-fill me-1"></i>Spanish Capital of Gastronomy
+            </span>
+            <h1 class="fw-bold display-6">The Authentic Taste of the Sea, Mountains, and Countryside</h1>
+            <p class="lead text-muted mb-0">
+              Officially named <strong>Spanish Capital of Gastronomy</strong> (a title held under the motto <em>"The Pantry of Europe"</em>), Huelva is a culinary paradise famous for its <strong>white prawns</strong>, <strong>acorn-fed Iberian ham (DOP Jabugo)</strong>, wedge clams (coquinas), fried cuttlefish, and Condado wines.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img src="./img/gastronomia.jpg" class="img-fluid rounded shadow" alt="Huelva Gastronomy">
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVS & TABS COMPONENT (4 INTERACTIVE TABS) -->
+      <h2 class="fw-bold mb-3"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Where to Eat and Shop by Area</h2>
+      <p class="text-muted mb-4">Click on each tab to explore our selection of recommended bars and shopping areas:</p>
+
+      <ul class="nav nav-tabs nav-fill fw-semibold" id="pestanasGastronomia" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-capital" data-bs-toggle="tab" data-bs-target="#contenido-capital" type="button" role="tab" aria-controls="contenido-capital" aria-selected="true">
+            <i class="bi bi-building me-1"></i>Huelva Capital
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-costa" data-bs-toggle="tab" data-bs-target="#contenido-costa" type="button" role="tab" aria-controls="contenido-costa" aria-selected="false">
+            <i class="bi bi-water me-1"></i>Coast (Punta Umbría & El Rompido)
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-sierra" data-bs-toggle="tab" data-bs-target="#contenido-sierra" type="button" role="tab" aria-controls="contenido-sierra" aria-selected="false">
+            <i class="bi bi-tree me-1"></i>Sierra de Huelva
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-compras" data-bs-toggle="tab" data-bs-target="#contenido-compras" type="button" role="tab" aria-controls="contenido-compras" aria-selected="false">
+            <i class="bi bi-bag-check me-1"></i>Shops & Shopping Malls
+          </button>
+        </li>
+      </ul>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content border border-top-0 rounded-bottom p-4 bg-white shadow-sm" id="contenidoPestanas">
+
+        <!-- TAB 1: HUELVA CAPITAL -->
+        <div class="tab-pane fade show active" id="contenido-capital" role="tabpanel" aria-labelledby="tab-capital" tabindex="0">
+          <div class="row g-4 align-items-center mb-4">
+            <div class="col-md-4">
+              <img src="./img/bares_capital.jpg" class="img-fluid rounded shadow-sm" alt="Tapas in Huelva Capital">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold text-primary">Must-Try Tapas in Huelva Capital</h3>
+              <p>Downtown Huelva (around Gran Vía, Plaza de las Monjas, and Calle Vázquez López) is packed with historic bars where fresh seafood and traditional tapas take center stage.</p>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card h-100 border-primary">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Downtown Classic</span>
+                  <h5 class="card-title fw-bold">Bar Pappardelle / Azabache</h5>
+                  <p class="card-text small"><strong>Location:</strong> Calle Vázquez López.<br>A culinary benchmark in the capital. Be sure to try their signature tapas made with local ingredients, Iberian cured meats, and Condado wines.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-primary">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Seafood Bar</span>
+                  <h5 class="card-title fw-bold">Bar Juan José</h5>
+                  <p class="card-text small"><strong>Location:</strong> Calle Villarrasa.<br>Famous across Spain for its juicy Spanish potato omelet, boiled white prawns, and Russian potato salad.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-primary">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Tradition</span>
+                  <h5 class="card-title fw-bold">Cervecería Bonilla</h5>
+                  <p class="card-text small"><strong>Location:</strong> Calle Concepción.<br>A classic local meeting spot for ice-cold draft beer paired with small sandwiches (montaditos), cured tuna (mojama), and fresh estuary seafood.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: COASTAL BARS -->
+        <div class="tab-pane fade" id="contenido-costa" role="tabpanel" aria-labelledby="tab-costa" tabindex="0">
+          <div class="row g-4 align-items-center mb-4">
+            <div class="col-md-4">
+              <img src="./img/bares_costa.jpg" class="img-fluid rounded shadow-sm" alt="Gastronomy on the Huelva Coast">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold text-info">Seaside Flavors in Punta Umbría and El Rompido</h3>
+              <p>Just minutes from the capital, the coastal fishing villages serve freshly auctioned fish, garlic wedge clams (coquinas), baby clams, and seafood rice dishes overlooking the Atlantic or the Piedras estuary.</p>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card h-100 border-info">
+                <div class="card-body">
+                  <span class="badge bg-info text-dark mb-2">Punta Umbría</span>
+                  <h5 class="card-title fw-bold">Calle Ancha & Plaza Pérez Pastor</h5>
+                  <p class="card-text small">Punta Umbría's iconic promenade lined with tapas bars and fried-fish spots (such as <em>Casa Diego</em> and <em>El Tabla</em>) serving fried cuttlefish, anchovies, and prawns.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-info">
+                <div class="card-body">
+                  <span class="badge bg-info text-dark mb-2">El Rompido</span>
+                  <h5 class="card-title fw-bold">El Rompido Waterfront</h5>
+                  <p class="card-text small">Restaurants like <em>Caribe II</em> and <em>La Patera</em> stand out for their views of the Flecha del Rompido sandspit, seafood rice dishes, and fresh coquinas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-info">
+                <div class="card-body">
+                  <span class="badge bg-info text-dark mb-2">Beachfront</span>
+                  <h5 class="card-title fw-bold">La Canaleta Beach Bars (Chiringuitos)</h5>
+                  <p class="card-text small">Ideal at sunset in Punta Umbría for grilled fish and skewered sardines with your feet practically in the sand.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: SIERRA BARS -->
+        <div class="tab-pane fade" id="contenido-sierra" role="tabpanel" aria-labelledby="tab-sierra" tabindex="0">
+          <div class="row g-4 align-items-center mb-4">
+            <div class="col-md-4">
+              <img src="./img/bares_sierra.jpg" class="img-fluid rounded shadow-sm" alt="Gastronomy in Sierra de Huelva">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold text-success">Mountain Taverns in Sierra de Huelva</h3>
+              <p>In mountain towns such as Aracena, Jabugo, Linares de la Sierra, and Alájar, the pasturelands (dehesa) take the spotlight: charcoal-grilled Iberian pork cuts, acorn-fed ham, and wild mushroom stews.</p>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card h-100 border-success">
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Aracena</span>
+                  <h5 class="card-title fw-bold">Restaurante Casas / José Vicente</h5>
+                  <p class="card-text small">Top spots in the heart of Aracena for hand-carved Iberian ham, wild boletus mushroom croquettes, and charcoal-grilled meats.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-success">
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Linares de la Sierra</span>
+                  <h5 class="card-title fw-bold">Restaurante Arrieros</h5>
+                  <p class="card-text small">Renowned for its creative mountain cuisine rooted in local garden produce and Iberian pork in a picturesque rural setting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-success">
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Jabugo</span>
+                  <h5 class="card-title fw-bold">Jabugo & El Repilado Taverns</h5>
+                  <p class="card-text small">World cradle of Protected Designation of Origin Iberian ham. A mandatory stop to sample artisan Iberian cured meats.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: SHOPS & SHOPPING MALLS -->
+        <div class="tab-pane fade" id="contenido-compras" role="tabpanel" aria-labelledby="tab-compras" tabindex="0">
+          <div class="row g-4 align-items-center mb-4">
+            <div class="col-md-4">
+              <img src="./img/compras.jpg" class="img-fluid rounded shadow-sm" alt="Shopping malls and stores in Huelva">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold text-warning text-dark">Shopping Malls and Local Stores in Huelva</h3>
+              <p>From large open-air retail parks to traditional food markets and pedestrian shopping streets filled with local boutiques.</p>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card h-100 border-warning">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Shopping Mall</span>
+                  <h5 class="card-title fw-bold">Holea Shopping Center</h5>
+                  <p class="card-text small"><strong>Location:</strong> Ronda Exterior Norte.<br>The province's largest open-air shopping center, featuring over 100 fashion stores, cinemas, a hypermarket, and a wide dining area.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Waterfront Leisure</span>
+                  <h5 class="card-title fw-bold">Aqualon Shopping Center</h5>
+                  <p class="card-text small"><strong>Location:</strong> Paseo de la Ría.<br>Known for its outdoor terraces overlooking the Odiel River, cafés, restaurants, and family entertainment venues.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Local Commerce</span>
+                  <h5 class="card-title fw-bold">Mercado del Carmen & Calle Concepción</h5>
+                  <p class="card-text small">At <strong>Mercado del Carmen</strong> you can buy fresh seafood straight from the fish auction, while downtown pedestrian streets offer local shops and souvenirs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">Huelva Tourism &copy; 2026</p>
+      <p class="small text-white-50 mb-0">Responsive Web Design Semester Project with Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

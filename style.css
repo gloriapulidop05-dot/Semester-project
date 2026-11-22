@@ -1,0 +1,128 @@
+/* Importar fuente caligráfica elegante desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Estilos personalizados para Turismo Huelva */
+body {
+  padding-top: 56px; /* Espacio para que el menú fijo no tape el contenido */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f0e6; /* Fondo beige cálido para toda la web */
+}
+
+/* Títulos principales de cada página con letra caligráfica */
+h1, .display-6 {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 3.4rem; /* Un poco más grande para que los trazos caligráficos luzcan nítidos */
+  font-weight: 400 !important;
+  line-height: 1.2;
+}
+
+/* Subtítulos importantes en cursiva clásica para que sean fáciles de leer */
+h2, h3, .card-title {
+  font-style: italic;
+}
+
+/* Menú superior en tono Azul Petróleo */
+.navbar.bg-primary {
+  background-color: #145369 !important; /* Azul petróleo elegante */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff !important; /* Letras en blanco para contrastar con el azul petróleo */
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+}
+
+/* CAMBIO DEL COLOR AZUL (PRIMARY) A VERDE PISTACHO OSCURO EN TODA LA WEB */
+.text-primary {
+  color: #557a1f !important; /* Verde pistacho oscuro para títulos e iconos */
+}
+
+.bg-primary,
+.badge.bg-primary,
+.card-header.bg-primary {
+  background-color: #557a1f !important;
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  background-color: #557a1f !important;
+  border-color: #557a1f !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #415e16 !important;
+  border-color: #415e16 !important;
+}
+
+.btn-outline-primary {
+  color: #557a1f !important;
+  border-color: #557a1f !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #557a1f !important;
+  border-color: #557a1f !important;
+  color: #ffffff !important;
+}
+
+.border-primary {
+  border-color: #557a1f !important;
+}
+
+/* Enlaces y paginación de la DataTable en verde pistacho oscuro */
+a {
+  color: #557a1f;
+}
+
+a:hover {
+  color: #3d5814;
+}
+
+.page-item.active .page-link {
+  background-color: #557a1f !important;
+  border-color: #557a1f !important;
+  color: #ffffff !important;
+}
+
+.page-link {
+  color: #557a1f !important;
+}
+
+/* Carrusel */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/* Cajas claras en tono beige tostado */
+.bg-light {
+  background-color: #ede4d3 !important;
+}
+
+footer {
+  background-color: #145369; /* Pie de página también en azul petróleo a juego con el menú */
+  color: #ffffff;
+}
+
+/* Cabecera de la tabla en tono burdeos */
+#tablaHuelva thead.table-dark th {
+  background-color: #722f37 !important; /* Burdeos */
+  border-color: #5a232a !important;
+  color: #ffffff !important;
+}

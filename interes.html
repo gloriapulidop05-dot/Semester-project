@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What to See in Huelva - Places of Interest</title>
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR WITH LOGO -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+          <img src="./img/logo.png" alt="Huelva Tourism Logo" width="36" height="36" class="me-2 rounded">
+          HUELVA TOURISM
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./interes.html"><i class="bi bi-bank me-1"></i>What to See</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gastronomia.html"><i class="bi bi-cup-hot me-1"></i>Food & Shopping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actividades.html"><i class="bi bi-sun me-1"></i>Leisure & History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./guia.html"><i class="bi bi-table me-1"></i>Directory (50)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html"><i class="bi bi-envelope-paper me-1"></i>Plan Your Trip</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BREADCRUMB -->
+    <div class="container mt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 rounded">
+          <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">What to See (Places of Interest)</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- SECTION HEADER -->
+    <section class="container my-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-2">Heritage & Nature</span>
+        <h1 class="fw-bold">Must-See Places in Huelva</h1>
+        <p class="lead text-muted">From the legacy of the Discovery of America to the depths of the Sierra de Aracena.</p>
+      </div>
+
+      <!-- GRID OF 6 PLACES OF INTEREST -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <!-- 1. Wharf of the Caravels -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/carabelas.jpg" class="card-img-top" alt="Wharf of the Caravels" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">Palos de la Frontera</span>
+              <h5 class="card-title fw-bold">Wharf of the Caravels</h5>
+              <p class="card-text">Open-air museum housing life-size replicas of the Niña, the Pinta, and the Santa María built for the 5th Centenary.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalCarabelas">
+                <i class="bi bi-info-circle me-1"></i>View Detailed Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Cave of Wonders -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/gruta.jpg" class="card-img-top" alt="Cave of Wonders" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Aracena</span>
+              <h5 class="card-title fw-bold">Cave of Wonders (Gruta de las Maravillas)</h5>
+              <p class="card-text">One of the most spectacular show caves in Spain, featuring underground lakes and stunning stalactite and stalagmite formations.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#modalGruta">
+                <i class="bi bi-info-circle me-1"></i>View Detailed Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Sierra de Huelva -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/sierra.jpg" class="card-img-top" alt="Sierra de Huelva" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Natural Park</span>
+              <h5 class="card-title fw-bold">Sierra de Huelva</h5>
+              <p class="card-text">Chestnut and cork oak forests, charming whitewashed villages like Alájar and Linares de la Sierra, and the cradle of Iberian ham.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button type="button" class="btn btn-warning text-dark fw-semibold w-100" data-bs-toggle="modal" data-bs-target="#modalSierra">
+                <i class="bi bi-info-circle me-1"></i>View Detailed Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Rio Tinto Pier -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/muelle.jpg" class="card-img-top" alt="Rio Tinto Pier" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Huelva Capital</span>
+              <h5 class="card-title fw-bold">Rio Tinto Pier</h5>
+              <p class="card-text">Former iron and copper ore loading dock built in 1876 by the British company Rio Tinto Company Limited.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button type="button" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#modalMuelle">
+                <i class="bi bi-info-circle me-1"></i>View Detailed Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Monastery of La Rábida -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/rabida.jpg" class="card-img-top" alt="Monastery of La Rábida" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Columbian Sites</span>
+              <h5 class="card-title fw-bold">Monastery of La Rábida</h5>
+              <p class="card-text">Gothic-Mudéjar Franciscan monastery where Christopher Columbus prepared his voyage to America alongside the friars.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button type="button" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#modalRabida">
+                <i class="bi bi-info-circle me-1"></i>View Detailed Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Reina Victoria Neighborhood -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/barrio.jpg" class="card-img-top" alt="Reina Victoria Neighborhood" style="height: 220px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Huelva Capital</span>
+              <h5 class="card-title fw-bold">Reina Victoria Neighborhood</h5>
+              <p class="card-text">Popularly known as the Workers' Quarter (Barrio Obrero), noted for its Victorian English architecture built for mine employees.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button type="button" class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#modalBarrio">
+                <i class="bi bi-info-circle me-1"></i>View Detailed Info
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALS WITH DETAILED INFORMATION -->
+
+  <!-- Modal 1: Wharf of the Caravels -->
+  <div class="modal fade" id="modalCarabelas" tabindex="-1" aria-labelledby="tituloCarabelas" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="tituloCarabelas"><i class="bi bi-tsunami me-2"></i>Wharf of the Caravels</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="./img/carabelas.jpg" class="img-fluid rounded" alt="Wharf of the Caravels">
+            </div>
+            <div class="col-md-6">
+              <p><strong>Location:</strong> Paraje de La Rábida, Palos de la Frontera.</p>
+              <p><strong>What to see:</strong> Board all three ships (Niña, Pinta, and Santa María), explore the 15th-century medieval port recreation, and visit the interpretation center.</p>
+              <p class="mb-0"><strong>Opening hours:</strong> Tuesday to Sunday from 10:00 AM to 7:00 PM (extended in summer).</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Cave of Wonders -->
+  <div class="modal fade" id="modalGruta" tabindex="-1" aria-labelledby="tituloGruta" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="tituloGruta"><i class="bi bi-gem me-2"></i>Cave of Wonders (Gruta de las Maravillas)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="./img/gruta.jpg" class="img-fluid rounded" alt="Cave of Wonders">
+            </div>
+            <div class="col-md-6">
+              <p><strong>Location:</strong> Calle Pozo de la Nieve, s/n, Aracena (Huelva).</p>
+              <p><strong>History:</strong> Opened to the public in 1914, it was the first tourist cave in Spain. The guided tour covers over 1,200 meters through chambers like the Hall of Diamonds and the Emerald Lake.</p>
+              <p class="mb-0"><strong>Tip:</strong> Book tickets in advance, as daily capacity is limited to protect the ecosystem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Sierra de Huelva -->
+  <div class="modal fade" id="modalSierra" tabindex="-1" aria-labelledby="tituloSierra" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-dark">
+          <h5 class="modal-title" id="tituloSierra"><i class="bi bi-tree-fill me-2"></i>Sierra de Huelva</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="./img/sierra.jpg" class="img-fluid rounded" alt="Sierra de Huelva">
+            </div>
+            <div class="col-md-6">
+              <p><strong>Key towns:</strong> Aracena, Jabugo, Alájar, Cortegana, and Linares de la Sierra.</p>
+              <p><strong>Highlights:</strong> Part of the Dehesas de Sierra Morena Biosphere Reserve. Ideal for hiking, autumn mushroom foraging, and mountain gastronomy (DOP Jabugo Iberian ham).</p>
+              <p class="mb-0"><strong>Must-visit viewpoint:</strong> Peña de Arias Montano in Alájar offers the best panoramic views of the region.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Rio Tinto Pier -->
+  <div class="modal fade" id="modalMuelle" tabindex="-1" aria-labelledby="tituloMuelle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="tituloMuelle">Rio Tinto Pier</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Technical facts:</strong> Over one kilometer long, extending into the waters of the Odiel River. Declared a Site of Cultural Interest.</p>
+          <p class="mb-0"><strong>Best time to visit:</strong> At sunset, when the sun reflects off the water and the iron structure.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Monastery of La Rábida -->
+  <div class="modal fade" id="modalRabida" tabindex="-1" aria-labelledby="tituloRabida" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary text-white">
+          <h5 class="modal-title" id="tituloRabida">Monastery of La Rábida</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Historical importance:</strong> Christopher Columbus stayed here before setting sail for America and received support from Friar Juan Pérez and Friar Antonio de Marchena.</p>
+          <p class="mb-0"><strong>Highlights:</strong> The Mudéjar cloister, frescoes by Daniel Vázquez Díaz, and the statue of Our Lady of Miracles.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Reina Victoria Neighborhood -->
+  <div class="modal fade" id="modalBarrio" tabindex="-1" aria-labelledby="tituloBarrio" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="tituloBarrio">Reina Victoria Neighborhood</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Architecture:</strong> Built in the early 20th century, blending British Victorian influences with Andalusian Neo-Mudéjar details. Each house features a slightly different design.</p>
+          <p class="mb-0"><strong>Location:</strong> Next to downtown Huelva, very close to Casa Colón.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">Huelva Tourism &copy; 2026</p>
+      <p class="small text-white-50 mb-0">Responsive Web Design Semester Project with Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

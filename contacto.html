@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan Your Trip - Huelva Tourism Contact</title>
+  <!-- Local Bootstrap CSS -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Official Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Styles -->
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR WITH LOGO -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+          <img src="./img/logo.png" alt="Huelva Tourism Logo" width="36" height="36" class="me-2 rounded">
+          HUELVA TOURISM
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interes.html"><i class="bi bi-bank me-1"></i>What to See</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gastronomia.html"><i class="bi bi-cup-hot me-1"></i>Food & Shopping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actividades.html"><i class="bi bi-sun me-1"></i>Leisure & History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./guia.html"><i class="bi bi-table me-1"></i>Directory (50)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contacto.html"><i class="bi bi-envelope-paper me-1"></i>Plan Your Trip</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BREADCRUMB -->
+    <div class="container mt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 rounded">
+          <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Plan Your Trip & Contact</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- RESPONSIVE FORM SECTION -->
+    <section class="container my-4">
+      <div class="text-center mb-4">
+        <span class="badge bg-primary mb-2">Visitor Information Office</span>
+        <h1 class="fw-bold">Plan Your Visit to Huelva</h1>
+        <p class="lead text-muted">Fill out the form below to receive a personalized travel guide, book activities, or ask us any questions.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white py-3">
+              <h5 class="mb-0"><i class="bi bi-card-checklist me-2"></i>Itinerary Request & Contact Form</h5>
+            </div>
+            <div class="card-body p-4 p-md-5 bg-light">
+
+              <!-- Confirmation alert (shown upon clicking Save) -->
+              <div id="mensajeExito" class="alert alert-success d-none" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i><strong>Details saved successfully!</strong> Our Huelva tourism team will get in touch with you shortly.
+              </div>
+
+              <form id="formHuelva" class="row g-3" onsubmit="event.preventDefault(); document.getElementById('mensajeExito').classList.remove('d-none');">
+
+                <!-- Field 1: First Name (Text input) -->
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label fw-semibold">First Name *</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="e.g. Mary" required>
+                </div>
+
+                <!-- Field 2: Last Name (Text input) -->
+                <div class="col-md-6">
+                  <label for="apellidos" class="form-label fw-semibold">Last Name *</label>
+                  <input type="text" class="form-control" id="apellidos" placeholder="e.g. Smith" required>
+                </div>
+
+                <!-- Field 3: Email with Input Group -->
+                <div class="col-md-6">
+                  <label for="correo" class="form-label fw-semibold">Email Address *</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-envelope text-primary"></i></span>
+                    <input type="email" class="form-control" id="correo" placeholder="name@example.com" required>
+                  </div>
+                </div>
+
+                <!-- Field 4: Phone with Input Group -->
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label fw-semibold">Contact Phone</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-white">+34</span>
+                    <input type="tel" class="form-control" id="telefono" placeholder="600 123 456">
+                  </div>
+                </div>
+
+                <!-- Field 5: Estimated Arrival Date -->
+                <div class="col-md-4">
+                  <label for="fechaLlegada" class="form-label fw-semibold">Arrival Date *</label>
+                  <input type="date" class="form-control" id="fechaLlegada" required>
+                </div>
+
+                <!-- Field 6: Number of Travelers -->
+                <div class="col-md-4">
+                  <label for="numPersonas" class="form-label fw-semibold">Number of Travelers</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-people"></i></span>
+                    <input type="number" class="form-control" id="numPersonas" min="1" max="30" value="2">
+                  </div>
+                </div>
+
+                <!-- Field 7: Estimated Budget per Person with Input Group -->
+                <div class="col-md-4">
+                  <label for="presupuesto" class="form-label fw-semibold">Budget per Person</label>
+                  <div class="input-group">
+                    <input type="number" class="form-control" id="presupuesto" placeholder="300">
+                    <span class="input-group-text bg-white">&euro;</span>
+                  </div>
+                </div>
+
+                <!-- Field 8: Main Area of Interest (Select with Option) -->
+                <div class="col-md-6">
+                  <label for="zonaInteres" class="form-label fw-semibold">Main Area You Want to Visit *</label>
+                  <select class="form-select" id="zonaInteres" required>
+                    <option selected disabled value="">Choose an area in Huelva...</option>
+                    <option value="capital">Huelva Capital & Columbian Sites</option>
+                    <option value="costa">Costa de la Luz (Punta Umbría, El Rompido, Islantilla)</option>
+                    <option value="sierra">Sierra de Aracena & Picos de Aroche (Jabugo, Cave)</option>
+                    <option value="cuenca">Riotinto Mining Basin</option>
+                    <option value="donana">Doñana National Park & El Rocío</option>
+                  </select>
+                </div>
+
+                <!-- Field 9: Preferred Accommodation Type (Select with Option) -->
+                <div class="col-md-6">
+                  <label for="alojamiento" class="form-label fw-semibold">Preferred Accommodation</label>
+                  <select class="form-select" id="alojamiento">
+                    <option value="hotel" selected>City or Beach Hotel</option>
+                    <option value="rural">Rural Cottage in the Sierra</option>
+                    <option value="apartamento">Tourist Apartment</option>
+                    <option value="camping">Beachside Camping / Glamping</option>
+                  </select>
+                </div>
+
+                <!-- Field 10: Travel Group Type (Radio buttons) -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold d-block">Who Are You Traveling With? (Select one)</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoViaje" id="viajePareja" value="pareja" checked>
+                    <label class="form-check-label" for="viajePareja">As a couple</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoViaje" id="viajeFamilia" value="familia">
+                    <label class="form-check-label" for="viajeFamilia">With family (with children)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoViaje" id="viajeAmigos" value="amigos">
+                    <label class="form-check-label" for="viajeAmigos">With a group of friends</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoViaje" id="viajeSolo" value="solo">
+                    <label class="form-check-label" for="viajeSolo">Solo / cultural trip</label>
+                  </div>
+                </div>
+
+                <!-- Field 11: Activities of Interest (Checkboxes) -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold d-block">Activities You Would Like to Include</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="actTren" value="tren">
+                    <label class="form-check-label" for="actTren">Riotinto Mining Tourist Train</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="actGastro" value="gastronomia">
+                    <label class="form-check-label" for="actGastro">Gastronomic Route (White Prawns & DOP Jabugo Ham)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="actDonana" value="donana">
+                    <label class="form-check-label" for="actDonana">4x4 Excursion in Doñana</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="actBarco" value="barco">
+                    <label class="form-check-label" for="actBarco">Boat Tour on the Estuary / Flecha del Rompido</label>
+                  </div>
+                </div>
+
+                <!-- Field 12: Additional Comments (Textarea) -->
+                <div class="col-12">
+                  <label for="comentarios" class="form-label fw-semibold">Comments, Questions, or Special Requests</label>
+                  <textarea class="form-control" id="comentarios" rows="4" placeholder="Tell us which places you are most excited to visit, if you need accessibility information, or restaurant recommendations..."></textarea>
+                </div>
+
+                <!-- Privacy Checkbox -->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="aceptoPolitica" required>
+                    <label class="form-check-label small text-muted" for="aceptoPolitica">
+                      I agree to receive personalized tourist information about Huelva in accordance with the privacy policy. *
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Save Button at the bottom of the form -->
+                <div class="col-12 mt-4 d-flex gap-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4">
+                    <i class="bi bi-save me-2"></i>Save
+                  </button>
+                  <button type="reset" class="btn btn-outline-secondary btn-lg">
+                    <i class="bi bi-arrow-counterclockwise me-1"></i>Clear Fields
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">Huelva Tourism &copy; 2026</p>
+      <p class="small text-white-50 mb-0">Responsive Web Design Semester Project with Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

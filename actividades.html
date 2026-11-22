@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activities & Famous People - Huelva Tourism</title>
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR WITH LOGO -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+          <img src="./img/logo.png" alt="Huelva Tourism Logo" width="36" height="36" class="me-2 rounded">
+          HUELVA TOURISM
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interes.html"><i class="bi bi-bank me-1"></i>What to See</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gastronomia.html"><i class="bi bi-cup-hot me-1"></i>Food & Shopping</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./actividades.html"><i class="bi bi-sun me-1"></i>Leisure & History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./guia.html"><i class="bi bi-table me-1"></i>Directory (50)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html"><i class="bi bi-envelope-paper me-1"></i>Plan Your Trip</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BREADCRUMB -->
+    <div class="container mt-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-light p-2 rounded">
+          <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Activities & Famous People</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- SECTION 1: TOURIST ACTIVITIES -->
+    <section class="container my-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-success mb-2">Adventure, Nature & Culture</span>
+        <h1 class="fw-bold">Tourist Activities in Huelva</h1>
+        <p class="lead text-muted">Unforgettable experiences from the mining basin to the mouth of the Guadalquivir River.</p>
+      </div>
+
+      <!-- FEATURED ACTIVITY: RIOTINTO MINING TOURIST TRAIN + VIDEO -->
+      <div class="card border-danger shadow-sm mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5">
+            <img src="./img/tren_riotinto.jpg" class="img-fluid rounded-start w-100" alt="Riotinto Mining Tourist Train" style="height: 100%; min-height: 280px; object-fit: cover;">
+          </div>
+          <div class="col-lg-7">
+            <div class="card-body p-4">
+              <span class="badge bg-danger mb-2"><i class="bi bi-train-front-fill me-1"></i>Unique Experience in Europe</span>
+              <h2 class="card-title fw-bold">Riotinto Mining Tourist Train</h2>
+              <p class="card-text">
+                Travel 22 kilometers aboard restored 19th-century wooden locomotives and carriages at the Riotinto Mining Park. The route runs alongside the <strong>Rio Tinto</strong>, world-famous for the deep reddish color of its waters and studied by NASA for its similarity to the planet Mars.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="#videoRiotinto" class="btn btn-danger"><i class="bi bi-play-circle-fill me-1"></i>Watch Route Video</a>
+                <a href="./contacto.html" class="btn btn-outline-danger"><i class="bi bi-ticket-perforated me-1"></i>Request Booking</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTAINER FOR RIOTINTO TRAIN YOUTUBE VIDEO -->
+      <div id="videoRiotinto" class="bg-light p-4 rounded-3 border mb-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <h3 class="fw-bold text-danger"><i class="bi bi-youtube me-2"></i>The Journey on Video</h3>
+            <p class="text-muted">Discover what it feels like to cross the Martian landscapes of the Riotinto Mining Basin aboard this historic railway.</p>
+            <p class="small text-secondary mb-0"><i class="bi bi-info-circle me-1"></i>Tip: The round-trip journey takes approximately 1 hour and 30 minutes.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+              <iframe src="https://www.youtube.com/embed/caROu9oJQKE" title="Riotinto Mining Train" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OTHER 3 TOURIST ACTIVITIES -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/barco_ria.jpg" class="card-img-top" alt="Estuary Boat Tour" style="height: 210px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">Huelva Estuary & El Rompido</span>
+              <h5 class="card-title fw-bold">Boat Tours & Sightseeing</h5>
+              <p class="card-text">Sail through the confluence of the Tinto and Odiel rivers, take a ferry across to the unspoiled Flecha del Rompido sandspit, or enjoy a sunset cruise.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <a href="./contacto.html" class="btn btn-outline-info text-dark w-100"><i class="bi bi-compass me-1"></i>More Information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/donana.jpg" class="card-img-top" alt="Doñana National Park" style="height: 210px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-success mb-2">UNESCO World Heritage</span>
+              <h5 class="card-title fw-bold">4x4 Excursions in Doñana</h5>
+              <p class="card-text">Venture from Almonte and El Rocío into the marshes, mobile dunes, and woodlands of Doñana National Park, home to the Iberian lynx.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <a href="./contacto.html" class="btn btn-outline-success w-100"><i class="bi bi-binoculars me-1"></i>Book Guided Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="./img/sierra.jpg" class="card-img-top" alt="Hiking in Sierra de Aracena" style="height: 210px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Sports & Nature</span>
+              <h5 class="card-title fw-bold">Hiking Among Chestnut Groves</h5>
+              <p class="card-text">Walk the signposted trails linking Galaroza, Castaño del Robledo, and Alájar through centuries-old forests and dry-stone walls.</p>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <a href="./contacto.html" class="btn btn-outline-warning text-dark w-100"><i class="bi bi-map me-1"></i>Download Routes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <!-- SECTION 2: FAMOUS PEOPLE FROM HUELVA (5 figures) -->
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-2">Pride of Huelva</span>
+        <h2 class="fw-bold">Famous People from Huelva</h2>
+        <p class="lead text-muted">World-renowned figures in literature, sports, art, and music born in our province.</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+        <!-- Person 1: Juan Ramón Jiménez -->
+        <div class="col">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="./img/juanramon.jpg" class="card-img-top" alt="Juan Ramón Jiménez" style="height: 260px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Moguer (1881 - 1958)</span>
+              <h5 class="card-title fw-bold">Juan Ramón Jiménez</h5>
+              <p class="card-text">Poet from Moguer who won the <strong>1956 Nobel Prize in Literature</strong> and wrote the celebrated prose poem <em>Platero and I</em>.</p>
+              <div class="collapse" id="bioJRJ">
+                <p class="small text-muted border-top pt-2">His House Museum in Moguer preserves his personal library, original manuscripts, and memorabilia from his life with Zenobia Camprubí.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button class="btn btn-primary btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#bioJRJ" aria-expanded="false" aria-controls="bioJRJ">
+                <i class="bi bi-book me-1"></i>Read More About His Legacy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person 2: Carolina Marín -->
+        <div class="col">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="./img/carolina.jpg" class="card-img-top" alt="Carolina Marín" style="height: 260px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Huelva Capital (1993)</span>
+              <h5 class="card-title fw-bold">Carolina Marín</h5>
+              <p class="card-text">Widely regarded as the greatest European badminton player in history: <strong>Olympic Champion</strong>, three-time World Champion, and seven-time European Champion.</p>
+              <div class="collapse" id="bioCarolina">
+                <p class="small text-muted border-top pt-2">Huelva's Sports Palace is named after her in recognition of her historic career and for bringing Huelva onto the global stage.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button class="btn btn-warning text-dark fw-semibold btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#bioCarolina" aria-expanded="false" aria-controls="bioCarolina">
+                <i class="bi bi-trophy me-1"></i>View Major Titles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person 3: Daniel Vázquez Díaz -->
+        <div class="col">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="./img/vazquezdiaz.jpg" class="card-img-top" alt="Daniel Vázquez Díaz" style="height: 260px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-dark mb-2">Nerva (1882 - 1969)</span>
+              <h5 class="card-title fw-bold">Daniel Vázquez Díaz</h5>
+              <p class="card-text">One of the most influential Spanish painters of the 20th century, master of Neo-Cubism and creator of the famous <strong>Frescoes of the Discovery</strong> at La Rábida.</p>
+              <div class="collapse" id="bioVazquez">
+                <p class="small text-muted border-top pt-2">His hometown of Nerva houses a modern art center dedicated to his work and 20th-century Spanish avant-garde movements.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button class="btn btn-dark btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#bioVazquez" aria-expanded="false" aria-controls="bioVazquez">
+                <i class="bi bi-palette me-1"></i>Discover His Artwork
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person 4: Manuel Carrasco -->
+        <div class="col">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="./img/manuel_carrasco.jpg" class="card-img-top" alt="Manuel Carrasco" style="height: 260px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">Isla Cristina (1981)</span>
+              <h5 class="card-title fw-bold">Manuel Carrasco</h5>
+              <p class="card-text">Singer-songwriter from Isla Cristina, one of Spain's most beloved and successful pop artists, Favorite Son of Isla Cristina and Medal of Andalusia recipient.</p>
+              <div class="collapse" id="bioCarrasco">
+                <p class="small text-muted border-top pt-2">His lyrics are deeply tied to the sea, Isla Cristina's carnival, and his Huelva roots, breaking historic stadium attendance records across Spain.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button class="btn btn-info text-dark fw-semibold btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#bioCarrasco" aria-expanded="false" aria-controls="bioCarrasco">
+                <i class="bi bi-music-note-beamed me-1"></i>Explore His Career
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Person 5: Arcángel (Flamenco singer) -->
+        <div class="col">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="./img/arcangel.jpg" class="card-img-top" alt="Arcángel Flamenco Singer from Huelva" style="height: 260px; object-fit: cover;">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Huelva Capital (1977)</span>
+              <h5 class="card-title fw-bold">Arcángel</h5>
+              <p class="card-text">Francisco José Arcángel Ramos, flamenco singer born in Huelva capital, international benchmark of <em>cante jondo</em> and <strong>Latin Grammy</strong> winner.</p>
+              <div class="collapse" id="bioArcangel">
+                <p class="small text-muted border-top pt-2">An indisputable ambassador of <strong>fandangos de Huelva</strong>, he has brought both traditional and innovative flamenco to the world's most prestigious theaters.</p>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 pb-3">
+              <button class="btn btn-danger btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#bioArcangel" aria-expanded="false" aria-controls="bioArcangel">
+                <i class="bi bi-vinyl-fill me-1"></i>More About His Music
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MUSIC VIDEOS SECTION FOR MANUEL CARRASCO AND ARCÁNGEL -->
+      <div class="bg-light p-4 p-md-5 rounded-3 border mt-5">
+        <div class="text-center mb-4">
+          <span class="badge bg-dark mb-2"><i class="bi bi-music-note-list me-1"></i>Soundtrack of Huelva</span>
+          <h3 class="fw-bold">Listen to the Musical Talent of Our Land</h3>
+          <p class="text-muted mb-0">Enjoy a featured song by Manuel Carrasco and another by Arcángel.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Video 1: Manuel Carrasco -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-header bg-info text-dark fw-bold">
+                <i class="bi bi-youtube text-danger me-2"></i>Manuel Carrasco - Featured Song
+              </div>
+              <div class="card-body p-0">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/DnYSVhIPkBU" title="Manuel Carrasco Song" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2: Arcángel -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-header bg-danger text-white fw-bold">
+                <i class="bi bi-youtube me-2"></i>Arcángel (Huelva Flamenco) - Featured Song
+              </div>
+              <div class="card-body p-0">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/JeJcylN9Ey4" title="Arcángel Song" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">Huelva Tourism &copy; 2026</p>
+      <p class="small text-white-50 mb-0">Responsive Web Design Semester Project with Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
